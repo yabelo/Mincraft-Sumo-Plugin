@@ -2,7 +2,9 @@
 Sumo plugin for minecraft.
 
 <h1>Download</h1>
+https://www.spigotmc.org/resources/sumo-plugin.111613/
 
+<br><br>
 <h1>Usage</h1>
 <h2>Commands</h2>
 <h3>- joinsumo | js (joining sumo)</h3>
