@@ -1,0 +1,13 @@
+name: SumoPlugin
+version: '1.0'
+main: Main.Main
+author: Yablo
+
+commands:
+  js:
+  joinsumo:
+  ss:
+  startsumo:
+  setplayer:
+  setwaterlevel:
+  
