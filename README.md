@@ -12,5 +12,6 @@ https://www.spigotmc.org/resources/sumo-plugin.111613/
 <h3>- setplayer <1/2> (setting the locations for players)</h3>
 <h3>- setwaterlevel <double></h3>
 
+<br>
 <h1>Disclaimer</h1>
 <h3>Change the world name in the config with your world's name.</h3>
