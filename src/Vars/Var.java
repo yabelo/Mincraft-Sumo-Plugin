@@ -10,7 +10,7 @@ import Main.Main;
 public class Var {
 	private static FileConfiguration config = Main.getInstance().getConfig();
 	
-	public static World world = Bukkit.getWorld("Map");
+	public static World world = Bukkit.getWorld(getString("World"));
 	private static Location pl1 = new Location(world, getDouble("Player.1.x"), getDouble("Player.1.y"), getDouble("Player.1.z"), getFloat("Player.1.yaw"), getFloat("Player.1.pitch"));
 	private static Location pl2 = new Location(world, getDouble("Player.2.x"), getDouble("Player.2.y"), getDouble("Player.2.z"), getFloat("Player.2.yaw"), getFloat("Player.2.pitch"));
 	public static Location[] playerLocations = {pl1, pl2};
@@ -25,6 +25,11 @@ public class Var {
 
 	public static void setConfig(FileConfiguration config) {
 		Var.config = config;
+	}
+	
+	private static String getString(String s) {
+		if(!config.contains(s)) return null;
+		return config.getString(s);
 	}
 	
 	private static double getDouble(String s) {

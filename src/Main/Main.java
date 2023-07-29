@@ -33,6 +33,9 @@ public class Main extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new PlayerHunger(), this);
 		getServer().getPluginManager().registerEvents(new BreakBlocks(), this);
 		
+		if(!getConfig().contains("World"))
+			getConfig().set("World", "world");
+		
 		getCommand("js").setExecutor(new Join(this));
 		getCommand("joinsumo").setExecutor(new Join(this));
 		getCommand("ss").setExecutor(new Join(this));
